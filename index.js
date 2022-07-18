@@ -8,7 +8,7 @@ app.use(express.json());
 //CORS
 app.use(cors());
 app.use('/',router);
-var PORT= 5000||process.env.PORT;
+var PORT= 5000 || process.env.PORT;
 
 mongoose.connect('mongodb+srv://varnisha26:varnisha26@cluster0.lca0p.mongodb.net/quizapp').then(()=>{
     app.listen(PORT,()=>console.log(`Server is listening to ${PORT}`) )
